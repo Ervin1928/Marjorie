@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Marjorie</strong>
+                        <p>
+                            Una sa lahat gusto ko mag pa salamat sa dyos, dahil dumating ka sa buhay ko, lagi mo tandaan mahal na mahal kita, proud ako dahil meron akong ikaw, kahit dragon ka love parin kita, I'm always here by your side, miss na miss na kita, Labyuuu.
+                            <strong>From - Ervin</strong>
+                        </p>
+                                               
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
